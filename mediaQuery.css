@@ -1,0 +1,265 @@
+/* Navbar & Screen Section */
+
+/* Responsive Styles for Tablets */
+@media (max-width: 1024px) {
+    .logo {
+        font-size: 28px;
+        padding-left: 15px;
+    }
+
+    .nav ul li {
+        padding-right: 15px;
+    }
+
+    .intro {
+        font-size: 25px;
+    }
+
+    .discription {
+        width: 50%;
+        font-size: 20px;
+        top: 45%;
+    }
+
+    .screen-btn {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+/* Responsive Styles for Mobile and Smaller Screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack logo and nav vertically */
+        padding: 10px 15px; /* Reduced padding for mobile */
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        padding: 5px 0;
+        font-size: 24px; /* Adjust logo size for mobile */
+    }
+
+    .nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .nav ul {
+        flex-direction: row; /* Keep nav items horizontal */
+        padding: 0;
+        list-style: none;
+    }
+
+    .nav ul li {
+        margin: 0 10px;
+        padding: 0; /* Remove padding to avoid taking up extra space */
+    }
+
+    .nav a {
+        font-size: 14px; /* Adjust font size for readability */
+    }
+
+    .screen {
+        height: 60vh;
+    }
+
+    .intro {
+        font-size: 20px;
+        top: 30%;
+        left: 8%;
+    }
+
+    .discription {
+        width: 90%;
+        top: 40%;
+        font-size: 15px;
+    }
+
+    .screen-btn {
+        font-size: 15px;
+        padding: 6px 12px;
+    }
+
+    .imagediv {
+        width: 100%;
+        height: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 20px; /* Further reduce logo size */
+    }
+
+    .nav ul li {
+        margin: 0 5px; /* Narrow spacing between nav items */
+    }
+
+    .screen {
+        height: 35vh;
+    }
+
+    .intro {
+        
+        top: 65px;
+        font-size: 18px;
+    }
+
+    .discription {
+        top: 70px;
+        font-size: 14px;
+    }
+
+    .screen-btn {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}
+@media (min-width: 481px) and (max-width: 769px) {
+
+    .screen {
+        height: 30vh;
+    }
+    .intro {
+        
+        top: 65px;
+        font-size: 18px;
+    }
+
+    .discription {
+        width: 50%;
+        top: 70px;
+        font-size: 14px;
+    }
+
+    .screen-btn {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}
+
+/* Product  */
+
+@media (max-width: 1024px) {
+    
+    .item1{
+        width: 50%;
+        padding: 2px;
+        height: 58vh;
+        border:2px solid gainsboro;
+    }
+}
+@media (max-width: 768px) {
+    img{
+        width: 100%;
+        height: 30vh;
+        object-fit: cover; /* Cover the area while maintaining aspect ratio */
+        background-size: cover;
+    }
+    .item1 {
+        width: 100%; /* Use full width on small screens */
+        padding: 5px;
+        margin: 15px; /* Increase padding for better touch target */
+        height: auto; /* Allow height to adjust based on content */
+        border: 1px solid gainsboro; /* Adjust border for smaller screens */
+    }
+    .product-name {
+        font-size: 15px; /* Decrease font size for smaller screens */
+    }
+
+    .product-rating, .product-price {
+        font-size: 16px; /* Decrease font size for smaller screens */
+    }
+
+    .product-description, .product-features {
+        font-size: 14px; /* Decrease font size for readability */
+    }
+
+    .purchase-button {
+        width: 90%; /* Make button wider for easy tapping */
+        padding: 8px; /* Adjust padding for smaller buttons */
+        font-size: 16px; /* Ensure text is legible */
+    }
+}
+
+/* About */
+
+
+
+@media (max-width: 768px)   {
+    .about {
+        display: block;
+        width: 90%;
+        margin: 7%; /* Removed duplicate margin property */
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .about img{
+        width: 20rem;
+    }
+    .about-para {
+        font-size: 16px;
+    } 
+}
+@media (max-width : 1280px) {
+    .about{
+        margin: 2%;
+        display: block;
+    }
+    
+    .about-img{
+        width: 70%;
+        margin-left: 20%;
+margin-top: 50px;
+    }
+}
+.service-heading{
+    text-align: center;
+    margin-top: 5%;
+}
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+@media (max-width: 1024px) {
+  
+    .about img{
+        width: 100%;
+    }  
+}
+/* Footer */
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .link {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link span {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+}

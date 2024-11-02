@@ -1,0 +1,288 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+}
+h1{
+
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+/* ======= Header Styles ======= */
+header {
+    width: 100%; /* Full width for the header */
+    background-color: black; /* Black background for header */
+    color: white; /* White text color */
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    position: fixed; /* Fixed positioning at the top */
+    top: 0;
+    left: 0;
+    padding: 10px 20px; /* Padding for header */
+    z-index: 10; /* High z-index to stay above other elements */
+}
+
+.container {
+    display: flex; /* Flexbox for container */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between items */
+    width: 100%; /* Full width for container */
+}
+
+.logo {
+    font-size: 30px; /* Logo font size */
+    font-weight: bolder; /* Bolder font weight for logo */
+    color: #FFD700; /* Gold color for logo */
+}
+
+/* Navbar links */
+.nav ul {
+    display: flex; /* Flexbox for navbar */
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    list-style: none; /* Remove list style */
+    padding: 0 15px; /* Padding between nav items */
+}
+
+.nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* White text color for links */
+    font-size: 16px; /* Font size for nav links */
+}
+
+/* ======= Screen Section ======= */
+.screen {
+    width: 100%; /* Full width for screen section */
+    height: 50vh; /* Half of the viewport height */
+    position: relative; /* Positioning for child elements */
+    display: flex; /* Flexbox for centering content */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    margin-top: 60px; /* Margin to account for fixed header */
+}
+
+.imagediv {
+    width: 100%; /* Full width for image div */
+    height: 100%; /* Full height for image div */
+    position: absolute; /* Absolute positioning for image */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+}
+
+img {
+    width: 100%; /* Full width for images */
+    height: 100%; /* Full height for images */
+    object-fit: cover; /* Cover the area without distortion */
+}
+
+.intro {
+    position: absolute; /* Absolute positioning for intro text */
+    font-size: 30px; /* Font size for intro */
+    color: rgb(78, 76, 76); /* Color for intro text */
+    text-transform: capitalize; /* Capitalize text */
+    top: 40%; /* Position from the top */
+    left: 7%; /* Position from the left */
+    z-index: 5; /* Above other elements */
+}
+
+.intro span {
+    color: #FFD700; /* Gold color for span text */
+    font-weight: bolder; /* Bolder font weight for span */
+}
+
+.discription {
+    position: absolute; /* Absolute positioning for description */
+    width: 40%; /* Width for description */
+    top: 50%; /* Position from the top */
+    left: 5%; /* Position from the left */
+    padding-top: 20px; /* Padding on top */
+    font-size: 20px; /* Font size for description */
+    z-index: 5; /* Above other elements */
+    text-align: center; /* Center align text */
+}
+
+.screen-btn {
+    color: white; /* White text color for button */
+    border: none; /* No border */
+    margin-top: 15px; /* Margin on top */
+    background-color: #FFD700; /* Gold background for button */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 10px; /* Rounded corners for button */
+    font-size: 15px; /* Font size for button */
+    font-weight: bolder; /* Bolder font weight for button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.screen-btn a {
+    text-decoration: none; /* Remove underline from button link */
+    color: white; /* White text color for button link */
+}
+
+/* ======= Product Section ======= */
+.productHeading {
+    text-align: center; /* Center align heading */
+    margin: 40px; /* Margin for heading */
+    font-size: 40px; /* Font size for heading */
+}
+
+.product {
+    display: flex; /* Flexbox for product items */
+    justify-content: center; /* Center items */
+    gap: 40px; /* Gap between items */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+}
+
+.item1 {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Card shadow */
+    width: 20%; /* Width for item */
+    padding: 2px; /* Padding for item */
+    height: 70vh; /* Height for item */
+    border: 2px solid gainsboro; /* Border for item */
+    text-align: center; /* Center align text */
+    border-radius: 5px; /* Rounded corners for item */
+    background-color: #f9f9f9; /* Light background */
+}
+
+.product-name {
+    font-weight: bold; /* Bold font for product name */
+    font-size: 30px; /* Font size for product name */
+}
+
+.product-rating {
+    font-size: 20px; /* Font size for product rating */
+}
+
+.product-description {
+    font-size: 18px; /* Font size for product description */
+    padding-top: 10px; /* Padding on top */
+    color: #555; /* Color for product description */
+}
+
+.product-features {
+    font-size: 18px; /* Font size for product features */
+    padding-top: 10px; /* Padding on top */
+    color: #555; /* Color for product features */
+    list-style: none; /* Remove list style */
+}
+
+.product-price {
+    color: #FFD700; /* Gold color for product price */
+    font-size: 20px; /* Font size for product price */
+}
+
+.purchase-button {
+    width: 50%; /* Width for purchase button */
+    padding: 10px; /* Padding for button */
+    margin-top: 20px; /* Margin on top */
+    border-radius: 10px; /* Rounded corners for button */
+    border: none; /* No border */
+    background-color: #FFD700; /* Gold background for button */
+}
+
+/* ======= About Section ======= */
+.about-heading {
+    text-align: center; /* Center align about heading */
+    margin-top: 6%; /* Margin on top */
+    margin-bottom: 3%; /* Margin on bottom */
+}
+
+.about {
+    display: flex; /* Flexbox for about section */
+    flex-direction: row; /* Row layout */
+    width: 70%; /* Width for about section */
+    font-size: 20px; /* Font size for about section text */
+    margin: 5rem 0 10px 15rem; /* Adjust margins for better alignment */
+}
+
+.about img {
+    width: 27rem; /* Fixed width for about image */
+}
+
+.about-para {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Shadow effect for about paragraph */
+}
+
+/* ======= Service Card Styles ======= */
+.service-card {
+    margin: 0 15px 10px; /* Margin for service card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Card shadow */
+    padding: 20px; /* Padding for service card */
+    border: 1px solid #ccc; /* Border for service card */
+    border-radius: 10px; /* Rounded corners for service card */
+    text-align: center; /* Center align text in card */
+    width: 250px; /* Fixed width for service card */
+}
+
+.service-card i {
+    color: #FFD700; /* Gold color for icon in service card */
+}
+
+/* ======= Footer Styles ======= */
+.footer {
+    display: flex; /* Flexbox for footer */
+    background-color: gainsboro; /* Light background for footer */
+    padding: 20px; /* Padding for footer */
+    flex-wrap: wrap; /* Allow wrapping in footer */
+}
+
+.footer-logo {
+    margin: 5%; /* Margin for footer logo */
+}
+
+.footer-logo h2 {
+    padding-left: 20px; /* Padding on left for logo heading */
+}
+
+.link {
+    display: flex; /* Flexbox for links */
+    margin-top: 5%; /* Margin on top */
+    flex-wrap: wrap; /* Allow wrapping in links */
+}
+
+.link span {
+    margin-left: 7rem; /* Left margin for span */
+    flex: 1; /* Flex to fill space */
+}
+
+.link h3 {
+    margin-bottom: 10px; /* Bottom margin for link heading */
+}
+
+.link ul {
+    margin: 10%; /* Margin for list */
+    list-style: none; /* Remove list style */
+    font-size: 18px; /* Font size for list items */
+    padding: 0; /* Remove padding */
+}
+
+.link ul a {
+    color: black; /* Black text color for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.link ul a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.footer-bottom {
+    background-color: gainsboro; /* Light background for footer bottom */
+    text-align: center; /* Center align text */
+    padding: 10px 0; /* Padding for footer bottom */
+}
+
+.footer-bottom p {
+    margin: 0; /* Remove margin for paragraph */
+}
+
+.copy-right {
+    text-align: center; /* Center align copyright text */
+    background-color: gainsboro; /* Light background for copyright */
+}
