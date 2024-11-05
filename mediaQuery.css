@@ -228,6 +228,7 @@
 margin-top: 50px;
     }
 }
+
 .service-heading{
     text-align: center;
     margin-top: 5%;
@@ -245,8 +246,6 @@ margin-top: 50px;
         width: 100%;
     }  
 }
-/* Footer */
-
 /* Responsive Styles */
 @media (max-width: 768px) {
     .footer {
@@ -254,8 +253,11 @@ margin-top: 50px;
         align-items: center;
     }
     .link {
-        flex-direction: column;
-        align-items: center;
+        display: flex;
+        /* background-color: aqua; */
+        flex-direction: row;
+        gap: 80px;
+        /* align-items: center; */
     }
 
     .link span {

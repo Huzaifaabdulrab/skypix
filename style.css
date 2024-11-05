@@ -192,6 +192,7 @@ img {
     text-align: center; /* Center align about heading */
     margin-top: 6%; /* Margin on top */
     margin-bottom: 3%; /* Margin on bottom */
+    margin-left: 12%;
 }
 
 .about {
@@ -206,7 +207,8 @@ img {
     width: 27rem; /* Fixed width for about image */
 }
 
-.about-para {
+.about-para p , h1{
+    margin-left: 40px;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Shadow effect for about paragraph */
 }
 
