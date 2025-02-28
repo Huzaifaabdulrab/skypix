@@ -1,6 +1,21 @@
 /* Navbar & Screen Section */
 
+@media (max-width: 1024px) {
+    .item1 {
+        width: 28%;
+        height: 100%;
+        padding: 11px;
+        height: 541px;
+        border: 2px solid gainsboro;
+    }
+}
 /* Responsive Styles for Tablets */
+@media (max-width: 1280px) {
+    .about {
+        margin: 14% !important;
+        display: block;
+    }
+}
 @media (max-width: 1024px) {
     .logo {
         font-size: 28px;
@@ -154,15 +169,6 @@
 
 /* Product  */
 
-@media (max-width: 1024px) {
-    
-    .item1{
-        width: 50%;
-        padding: 2px;
-        height: 58vh;
-        border:2px solid gainsboro;
-    }
-}
 @media (max-width: 768px) {
     img{
         width: 100%;
