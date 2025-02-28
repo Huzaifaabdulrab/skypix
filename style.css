@@ -196,6 +196,7 @@ img {
 }
 
 .about {
+    gap: 100px;
     display: flex; /* Flexbox for about section */
     flex-direction: row; /* Row layout */
     width: 70%; /* Width for about section */
@@ -269,7 +270,14 @@ img {
     color: black; /* Black text color for links */
     text-decoration: none; /* Remove underline from links */
 }
-
+.mainText{
+    /* background-color: #ccc; */
+    height: 300px;
+}
+.text{
+    /* background-color: blue; */
+    height: 370px;
+}
 .link ul a:hover {
     text-decoration: underline; /* Underline on hover */
 }
